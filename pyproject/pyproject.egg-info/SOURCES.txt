@@ -1,0 +1,11 @@
+bs.py
+helloworld.py
+setup.py
+pyproject.egg-info/PKG-INFO
+pyproject.egg-info/SOURCES.txt
+pyproject.egg-info/dependency_links.txt
+pyproject.egg-info/namespace_packages.txt
+pyproject.egg-info/top_level.txt
+pyproject.egg-info/zip-safe
+scripts/abc
+scripts/hello-pybulder
