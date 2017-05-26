@@ -67,7 +67,7 @@ driver.save_screenshot('screen1.png')
 
 sleep(1)
 
-!(https://github.com/BarryFu/python/blob/master/selenium/pic/screen1.png)
+![](https://github.com/BarryFu/python/blob/master/selenium/pic/screen1.png)
 
 location = picture.location
 
@@ -83,7 +83,7 @@ frame4.save('123.png')
 
 qq=Image.open('123.png')
 
-!(https://github.com/BarryFu/python/blob/master/selenium/pic/123.png)
+![](https://github.com/BarryFu/python/blob/master/selenium/pic/123.png)
 
 imgry = qq.convert('L')
 
@@ -93,7 +93,7 @@ sharp_img = sharpness.enhance(2.0)
 
 sharp_img.save('123h.png')
 
-!(https://github.com/BarryFu/python/blob/master/selenium/pic/123h.png)
+![](https://github.com/BarryFu/python/blob/master/selenium/pic/123h.png)
 
 text=pytesseract.image_to_string(sharp_img)
 
