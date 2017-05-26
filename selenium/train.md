@@ -50,7 +50,7 @@ form_page = Select(driver.find_element_by_xpath('//*[@id="order_qty_str"]'))
 
 form_page.select_by_value('1')
 
-!(https://github.com/BarryFu/python/blob/master/selenium/pic/page1.png)
+![https://github.com/BarryFu/python/blob/master/selenium/pic/page1.png]
 
 form_page = driver.find_element_by_xpath('/html/body/form/table/tbody/tr[9]/td[2]/button')
 
