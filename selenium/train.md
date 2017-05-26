@@ -50,6 +50,8 @@ form_page = Select(driver.find_element_by_xpath('//*[@id="order_qty_str"]'))
 
 form_page.select_by_value('1')
 
+!(https://github.com/BarryFu/python/blob/master/selenium/pic/page1.png)
+
 form_page = driver.find_element_by_xpath('/html/body/form/table/tbody/tr[9]/td[2]/button')
 
 form_page.click()		#按按鈕找到xpath後，可直接click
@@ -61,9 +63,11 @@ sleep(2)
 
 picture = driver.find_element_by_xpath('//*[@id="idRandomPic"]')
 
-driver.save_screenshot('123.png')
+driver.save_screenshot('screen1.png')
 
 sleep(1)
+
+!(https://github.com/BarryFu/python/blob/master/selenium/pic/screen1.png)
 
 location = picture.location
 
@@ -71,7 +75,7 @@ size=picture.size	#先把隨機出現的圖片擷取下來
 
 rangle=(int(location['x']),int(location['y']),int(location['x']+size['width']),int(location['y']+size['height']))
 
-i=Image.open('123.png')	#用Image打開圖片	
+i=Image.open('screen1.png')	#用Image打開圖片	
 
 frame4=i.crop(rangle)	#rangle會把目標外的圖給刪除
 
@@ -79,13 +83,17 @@ frame4.save('123.png')
 
 qq=Image.open('123.png')
 
+!(https://github.com/BarryFu/python/blob/master/selenium/pic/123.png)
+
 imgry = qq.convert('L')
 
 sharpness =ImageEnhance.Contrast(imgry)
 
 sharp_img = sharpness.enhance(2.0)
 
-sharp_img.save('123.png')
+sharp_img.save('123h.png')
+
+!(https://github.com/BarryFu/python/blob/master/selenium/pic/123h.png)
 
 text=pytesseract.image_to_string(sharp_img)
 
